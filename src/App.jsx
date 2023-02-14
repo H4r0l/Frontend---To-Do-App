@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App container text-center aligned bg-secondar">
       <Section>
-          <h1>{appTitle}</h1>
+          <h1 className='fs-1'>{appTitle}</h1>
       </Section>
 
       <Section>
