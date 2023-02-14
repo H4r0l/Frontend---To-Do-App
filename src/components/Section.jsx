@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Section = () => {
+const Section = ({children}) => {
   return (
-    <div>Section</div>
+    <div style={{margin: "50px"}}>
+      {children}
+    </div>
   )
 }
 
