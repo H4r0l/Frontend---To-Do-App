@@ -33,7 +33,7 @@ function App() {
     await todos.put(`/todos/${id}`, item);
   }
   return (
-    <div className="App ui container center aligned">
+    <div className="App container text-center aligned bg-secondar">
       <Section>
           <h1>{appTitle}</h1>
       </Section>

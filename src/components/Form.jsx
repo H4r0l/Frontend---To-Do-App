@@ -20,8 +20,8 @@ const Form = ({ addTodo }) => {
         <form className="ui form" onSubmit={handleFormSubmit}>
             <div className="ui grid center aligned">
                 <div className="row">
-                    <div className="column five wide">
-                        <input
+                    <div className="column five wide ">
+                        <input className="border border-dark border-3 rounded-5" 
                             value={inputValue}
                             onChange={handleInputChange}
                             type="text"
