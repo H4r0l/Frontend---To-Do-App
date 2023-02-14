@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
-import 'semantic-ui-css/semantic.min.css'
 
 import Form from './components/Form'
 import Section from './components/Section'
-import List from 'semantic-ui-react'
+import List from './components/List'
 
 const appTitle = "To-Do App"
 
@@ -35,21 +34,21 @@ function App() {
   }
   return (
     <div className="App ui container center aligned">
-      <section>
+      <Section>
           <h1>{appTitle}</h1>
-      </section>
+      </Section>
 
-      <section>
+      <Section>
           <Form addTodo={addTodo} />
-      </section>
+      </Section>
 
-      <section>
+      <Section>
         <List
           editTodoListProp={editTodo}
           removeTodoListProp={removeTodo}
           list={todoList}
         />
-      </section>
+      </Section>
     </div>
   )
 }

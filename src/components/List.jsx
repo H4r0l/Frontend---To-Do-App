@@ -1,10 +1,10 @@
 import React from "react";
-import Todo from "./Todo";
+import ToDo from "./ToDo";
 
 const List = ({ list, removeTodoListProp, editTodoListProp }) => {
     const renderedList = list.map(
         (item) => (
-            <Todo
+            <ToDo
                 title={item.title}
                 completed={item.completed}
                 removeTodoItemProp={(e) => removeTodoListProp(item._id)}
