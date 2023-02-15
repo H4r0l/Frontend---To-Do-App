@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
+import todos from "./apis/index"
 
 import Form from './components/Form'
 import Section from './components/Section'
@@ -15,7 +16,6 @@ function App() {
       const { data } = await todos.get("/todos");
       setTodoList(data);
     }
-
     fetchData();
   }, [])
 
