@@ -7,3 +7,9 @@ input{
 * {
     font-family: 'Gaegu', cursive;
 }
+.line{
+    display: grid;
+    grid-template-rows: 5px;
+    grid-template-columns: 220px 50px;
+}
+
