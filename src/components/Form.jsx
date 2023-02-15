@@ -17,14 +17,14 @@ const Form = ({ addTodo }) => {
     };
     
     return (
-        <form className="ui form" onSubmit={handleFormSubmit}>
-            <div className="ui grid center aligned">
-                <div className="row">
+        <form className="ui form btn btn-lg rounded mx-auto " onSubmit={handleFormSubmit}>
+            <div className="d-flex flex-row bd-highlight mb-3">
+                <div className="line">
                     <div className="column five wide ">
-                        <input className="border border-dark border-3 rounded-5" 
+                        <input className="border border-dark border-3 rounded-5 w-100 h-20 px-4 p-2 bd-highlight" 
                             value={inputValue}
                             onChange={handleInputChange}
-                            type="text"
+                            type="text white"
                             placeholder="Enter something to do..."
                             style={{fontFamily: "'Fredoka', sans-serif", backgroundColor: "#B5B0B0"}}
                         />
